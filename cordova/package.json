@@ -5,7 +5,9 @@
   "description": "Phrase Auditory Scanning COmmunicator. Intended to be cross-platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
@@ -25,10 +27,11 @@
     "elementtree": "^0.1.7",
     "es6-promise-plugin": "^4.2.2",
     "glob": "^5.0.15",
-    "npm": "^2.15.12",
+    "npm": "^3.0.0",
     "plist": "^1.2.0",
     "q": "^1.5.1",
-    "uuid": "^3.1.0"
+    "uuid": "^3.1.0",
+    "snyk": "^1.83.0"
   },
   "cordova": {
     "plugins": {
@@ -45,5 +48,6 @@
     "platforms": [
       "ios"
     ]
-  }
+  },
+  "snyk": true
 }
